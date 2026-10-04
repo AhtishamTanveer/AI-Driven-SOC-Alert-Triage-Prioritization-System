@@ -13,7 +13,7 @@
 
 *Final Year Project · BS Computer Science · Aug 2026*
 
-<img src="docs/screenshots/01-dashboard-overview.png" alt="SOC dashboard overview" width="900">
+<img src="Project_details/docs/screenshots/01-dashboard-overview.png" alt="SOC dashboard overview" width="900">
 
 </div>
 
@@ -44,15 +44,15 @@ This project adds an **explainable triage and SOAR layer on top of Wazuh**, usin
 
 <table>
   <tr>
-    <td width="50%"><img src="docs/screenshots/02-alert-feed.png" alt="Alert feed"><br><sub><b>Real-time alert feed</b>: priority, score, SOAR status, consolidated alerts</sub></td>
-    <td width="50%"><img src="docs/screenshots/04-global-threat-map.png" alt="Global threat map"><br><sub><b>Global threat map</b>: attack origins via IP geolocation</sub></td>
+    <td width="50%"><img src="Project_details/docs/screenshots/02-alert-feed.png" alt="Alert feed"><br><sub><b>Real-time alert feed</b>: priority, score, SOAR status, consolidated alerts</sub></td>
+    <td width="50%"><img src="Project_details/docs/screenshots/04-global-threat-map.png" alt="Global threat map"><br><sub><b>Global threat map</b>: attack origins via IP geolocation</sub></td>
   </tr>
   <tr>
-    <td width="50%"><img src="docs/screenshots/03-investigations.png" alt="Investigation management"><br><sub><b>Investigation management</b>: New → Active → Escalated → Resolved → Closed</sub></td>
-    <td width="50%"><img src="docs/screenshots/05-soar-panel.png" alt="SOAR panel"><br><sub><b>SOAR control panel</b>: master switch, auto-block threshold, playbooks</sub></td>
+    <td width="50%"><img src="Project_details/docs/screenshots/03-investigations.png" alt="Investigation management"><br><sub><b>Investigation management</b>: New → Active → Escalated → Resolved → Closed</sub></td>
+    <td width="50%"><img src="Project_details/docs/screenshots/05-soar-panel.png" alt="SOAR panel"><br><sub><b>SOAR control panel</b>: master switch, auto-block threshold, playbooks</sub></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><img src="docs/screenshots/06-rule-engine-config.png" alt="Rule engine configuration" width="60%"><br><sub><b>Rule engine configuration</b>: adjust severity and asset weights with sliders, no code changes</sub></td>
+    <td colspan="2" align="center"><img src="Project_details/docs/screenshots/06-rule-engine-config.png" alt="Rule engine configuration" width="60%"><br><sub><b>Rule engine configuration</b>: adjust severity and asset weights with sliders, no code changes</sub></td>
   </tr>
 </table>
 
@@ -163,8 +163,8 @@ Evaluated on real alert data from a running Wazuh environment, not only syntheti
 ### 1. Clone
 
 ```bash
-git clone https://github.com/AhtishamTanveer/FYP-Project.git
-cd FYP-Project
+git clone https://github.com/AhtishamTanveer/AI-Driven-SOC-Alert-Triage-Prioritization-System.git
+cd AI-Driven-SOC-Alert-Triage-Prioritization-System
 ```
 
 ### 2. Start Wazuh (Docker)
@@ -180,7 +180,7 @@ Wait a few minutes. The Wazuh dashboard is then available at `https://localhost`
 ### 3. Configure credentials
 
 ```bash
-cd ../../SOC-Alert-Triage
+cd ../../Code_files
 copy .env.example .env        # Windows   (Linux/macOS: cp .env.example .env)
 ```
 
@@ -225,8 +225,8 @@ Honest notes from the evaluation:
 ## 📂 Repository Structure
 
 ```
-FYP-Project/
-├── SOC-Alert-Triage/        # Our application code (Python)
+AI-Driven-Code_files-Prioritization-System/
+├── Code_files/              # Our application code (Python)
 │   ├── soc-dashboard.py
 │   ├── wazuh_integration.py
 │   ├── rule_engine.py
@@ -235,14 +235,15 @@ FYP-Project/
 │   ├── alert_database.py
 │   ├── alert_simulator.py
 │   ├── .env.example
-│   ├── requirements.txt
-│   └── LICENSE
+│   └── requirements.txt
+├── Project_details/
+│   └── docs/screenshots/
 ├── wazuh-docker/            # Official Wazuh Docker deployment (not our code)
-├── docs/screenshots/
+├── LICENSE
 └── README.md
 ```
 
-> `wazuh-docker/` comes from the official [wazuh/wazuh-docker](https://github.com/wazuh/wazuh-docker) repository and is used here to run the SIEM. It keeps its own license. All application logic is in `SOC-Alert-Triage/`.
+> `wazuh-docker/` comes from the official [wazuh/wazuh-docker](https://github.com/wazuh/wazuh-docker) repository and is used here to run the SIEM. It keeps its own license. All application logic is in `Code_files/`.
 
 ---
 
