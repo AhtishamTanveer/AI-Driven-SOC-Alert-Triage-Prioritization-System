@@ -11,7 +11,7 @@
 ![SQLite](https://img.shields.io/badge/SQLite-Storage-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-Charts-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
 
-*Final Year Project · BS Computer Science · Aug 2026*
+*·BS Computer Science Cybersecurity · Aug 2026*
 
 <img src="Project_details/docs/screenshots/01-dashboard-overview.png" alt="SOC dashboard overview" width="900">
 
@@ -225,7 +225,7 @@ Honest notes from the evaluation:
 ## 📂 Repository Structure
 
 ```
-AI-Driven-Code_files-Prioritization-System/
+AI-Driven-SOC-Alert-Triage-&-Prioritization-System/
 ├── Code_files/              # Our application code (Python)
 │   ├── soc-dashboard.py
 │   ├── wazuh_integration.py
@@ -254,7 +254,7 @@ AI-Driven-Code_files-Prioritization-System/
 | **Ahtisham Tanveer** | [GitHub](https://github.com/AhtishamTanveer) < https://www.linkedin.com/in/ahtisham-tanveer-0b36b0316/  |
 | **Supervisor** | Mr. Wasiq Aslam, Assistant Lecturer |
 
-*BS Computer Science, Department of Computer Science,Muslim Youth University Islamabad, Pakistan, August 2026.*
+*BS Computer Science, Department of Computer Science, Muslim Youth University Islamabad, Pakistan, August 2026.*
 
 ---
 
