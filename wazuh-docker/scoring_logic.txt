@@ -1,0 +1,89 @@
+def classify_priority(score):
+    if score >= 100:
+        return 'CRITICAL'     # 100+ points
+    elif score >= 70:
+        return 'HIGH'         # 70-99 points
+    elif score >= 40:
+        return 'MEDIUM'       # 40-69 points
+    else:
+        return 'LOW'          # 0-39 points
+```
+
+**Result:** 160 points → **CRITICAL** priority ✅
+
+---
+
+## **REAL-WORLD EXAMPLES**
+
+### **Example 1: CRITICAL Alert**
+```
+Failed login from known attacker at 2 AM on production database
+
+Severity: high          → +30
+Asset: production       → +40
+Threat: brute_force     → +30
+After-hours: yes        → +15
+Malicious IP: yes       → +25
+Failed attempts: 15     → +20
+─────────────────────────────
+TOTAL: 160 points → CRITICAL 🔴
+```
+
+---
+
+### **Example 2: HIGH Alert**
+```
+Windows error on production web server at 3 PM
+
+Severity: high          → +30
+Asset: production       → +40
+Threat: suspicious      → +15
+After-hours: no         → +0
+Malicious IP: no        → +0
+Failed attempts: 0      → +0
+─────────────────────────────
+TOTAL: 85 points → HIGH 🟠
+```
+
+---
+
+### **Example 3: MEDIUM Alert**
+```
+Policy violation on staging server during business hours
+
+Severity: medium        → +20
+Asset: staging          → +20
+Threat: policy_violation→ +10
+After-hours: no         → +0
+Malicious IP: no        → +0
+Failed attempts: 0      → +0
+─────────────────────────────
+TOTAL: 50 points → MEDIUM 🟡
+```
+
+---
+
+### **Example 4: LOW Alert**
+```
+Minor warning on development machine
+
+Severity: low           → +10
+Asset: development      → +10
+Threat: suspicious      → +15
+After-hours: no         → +0
+Malicious IP: no        → +0
+Failed attempts: 0      → +0
+─────────────────────────────
+TOTAL: 35 points → LOW 🟢
+
+
+
+
+................................................................................................................................................................................................
+Wazuh Rule Level → Your Severity:
+
+Level 12-15  → critical  → +50 points
+Level 7-11   → high      → +30 points
+Level 3-6    → medium    → +20 points
+Level 0-2    → low       → +10 points
+```

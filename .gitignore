@@ -1,0 +1,13 @@
+node_modules/
+venv/
+__pycache__/
+*.pem
+*.key
+*.crt
+*.csr
+*.log
+
+# Secrets and local data
+.env
+!wazuh-docker/.env
+*.db
